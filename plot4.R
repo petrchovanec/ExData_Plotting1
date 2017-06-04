@@ -38,8 +38,8 @@ lines(aux$DateTime,aux$Sub_metering_2, type="l", col="red")
 lines(aux$DateTime,aux$Sub_metering_3, type="l", col= "blue")
 
 legend("topright",30, legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
-       lty=1,col=c("black","red","blue"), cex = 0.75, bty="n",y.intersp = 0.5)
-
+       lty=1,col=c("black","red","blue"), bty="n")
+#y.intersp = 0.5, cex = 0.75
 
 #plot 4 change
 plot(aux$DateTime,aux$Global_reactive_power, type="l", ylab = "Global_reactive_power",xlab = "datetime", ylim=c(0.0,0.5))
